@@ -14,13 +14,14 @@ public class SetVolume : MonoBehaviour
 
     void Start()
     {
+        slider.value = 0.5f;
         slider.value = PlayerPrefs.GetFloat("MusicVolume", 0.5f);
     }
 
     //// Update is called once per frame
     //void Update()
     //{
-    //    VolumeSlider();
+    //
     //}
 
     public void VolumeSlider(float volume)
